@@ -1,0 +1,49 @@
+/* Bootstrap native style rewrite */
+h2 {
+	font-size: 16pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+p {
+	font-size: 12pt !important;
+}
+.small {
+	font-size: 85% !important;
+}
+.text-success {
+	color: green;
+}
+.text-warning {
+	color: orange;
+}
+.text-danger {
+	color: red;
+}
+.jumbotron {
+	padding: 10px 10px 10px 10px !important;
+	margin-bottom: 10px !important;
+}
+
+/* custom styles */
+.dropdown-menu.custom {
+    margin-right: 50px !important;
+    margin-top: -6px !important;
+}
+#logo {
+	text-transform: uppercase;
+}
+.feedback {
+		color: #d9534f;
+}
+.feedback:hover {
+		color: #d43f3a;
+}
+.feedback-warning {
+		color: black;
+}
+.feedback-warning:hover {
+		color: #d43f3a;м
+}
+.default {
+	color: black;
+}

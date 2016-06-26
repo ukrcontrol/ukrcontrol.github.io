@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Chebotiuk Pavlo">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Укрконтроль - Оцінка ефективності влади</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <div class="sr-only">Toggle navigation</div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+          </button>
+          <a class="navbar-brand" href="index.html" id="logo"><span class="text-warning">Укр</span><span class="text-primary">контроль</span></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Аналіз дій влади</a></li>
+            <li class="active"><a href="stat.html">Ефективність влади</a></li>
+            <li><a href="tysk.html">Громадський тиск</a></li>
+            <li><a href="initiative.html">Громадські ініціативи</a></li>
+            <li><a href="reforms.html">Реформи</a></li>
+            <!-- <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <div class="caret"></div></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li> -->
+            
+            <li><a href="../navbar/"></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            	<button class="btn btn-default dropdown-toggle" style="margin-top: 7px;" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Авторизація &raquo;</button>
+            	<ul class="dropdown-menu custom" aria-labelledby="dropdownMenu1">
+				    <li><a href="#">Для громадян</a></li>
+				    <li><a href="#">Для організацій</a></li>
+				 </ul>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    <div class="row">
+	<div class="col-md-12">
+		<div class="btn btn-default">Показати все</div> 
+		<div class="btn btn-default">Президент</div> 
+		<div class="btn btn-default">Кабінет Міністрів</div> 
+		<div class="btn btn-default">Верховна Рада</div>
+	</div>
+	</div>
+	<br>
+	<div class="row lenta">
+		<div class="col-md-12">
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-md-8">
+		  			<h2>Президент України - Петр Порошенко</h2>
+		  		</div>
+		  		<div class="col-md-4">
+		  			<p>Ефективність на 08.06.2016</p>
+		  		</div>
+		  	</div>
+	  		<div class="row">
+	  			<div class="col-md-4">
+	  	  			<img src="img/president.jpg" alt="" class="img-responsive">
+	  	  		</div>
+	  	  		<div class="col-md-8">
+	  	  			<div id="chart_president"></div>
+	  	  		</div>
+	  	  	</div>
+		  <div class="row">
+		  	<div class="col-md-4">
+		  		<div class="btn btn-warning btn-block">Ефективність на сьогодні: 6/10</div>
+		  	</div>
+		  	<div class="col-md-offset-6 col-md-2"><a href="#">Детальніше &raquo;</a></div>
+		  </div>
+		</div>
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-md-8">
+		  			<h2>Кабінет міністрів України</h2>
+		  		</div>
+		  		<div class="col-md-4">
+		  			<p>Ефективність на 08.06.2016</p>
+		  		</div>
+		  	</div>
+	  		<div class="row">
+	  			<div class="col-md-4">
+	  	  			<img src="img/cabmin.jpg" alt="" class="img-responsive">
+	  	  		</div>
+	  	  		<div class="col-md-8">
+	  	  			<div id="chart_cabmin"></div>
+	  	  		</div>
+	  	  	</div>
+		  <div class="row">
+		  	<div class="col-md-4">
+		  		<div class="btn btn-danger btn-block">Ефективність на сьогодні: 2/10</div>
+		  	</div>
+		  	<div class="col-md-offset-6 col-md-2"><a href="#">Детальніше &raquo;</a></div>
+		  </div>
+		</div>
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-md-8">
+		  			<h2>Верховна Рада України</h2>
+		  		</div>
+		  		<div class="col-md-4">
+		  			<p>Ефективність на 08.06.2016</p>
+		  		</div>
+		  	</div>
+	  		<div class="row">
+	  			<div class="col-md-4">
+	  	  			<img src="img/vr.jpg" alt="" class="img-responsive">
+	  	  		</div>
+	  	  		<div class="col-md-8">
+	  	  			<div id="chart_vr"></div>
+	  	  		</div>
+	  	  	</div>
+		  <div class="row">
+		  	<div class="col-md-4">
+		  		<div class="btn btn-success btn-block">Ефективність на сьогодні: 8/10</div>
+		  	</div>
+		  	<div class="col-md-offset-6 col-md-2"><a href="#">Детальніше &raquo;</a></div>
+		  </div>
+		</div>
+		</div>
+	</div>
+  </div> <!-- /container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load('current', {packages: ['corechart', 'line']});
+    google.charts.setOnLoadCallback(president);
+    google.charts.setOnLoadCallback(cabmin);
+    google.charts.setOnLoadCallback(vr);
+
+    function president() {
+
+    	var data = new google.visualization.DataTable();
+    	data.addColumn('string', 'Місяць');
+    	data.addColumn('number', 'Ефективність');
+    	data.addRows([
+    	  ['Липень', 2],
+    	  ['Серпень', 3],
+    	  ['Вересень', 1],
+    	  ['Жовтень', 5],
+    	  ['Листопад', 7],
+    	  ['Грудень', 6]
+    	]);
+
+          var options = {
+          	series: {
+          		0: {
+          			pointsVisible: true,
+          			color: 'orange'
+          		}
+          	  },
+          	legend: {
+          		position: 'none'
+          	},
+          	backgroundColor: 'transparent',
+          	height: 300,
+            hAxis: {
+              title: 'Дата'
+            },
+            vAxis: {
+              title: 'Ефективність',
+              ticks: [1,2,3,4,5,6,7,8,9,10]
+            }
+          };
+
+          var president = new google.visualization.LineChart(document.getElementById('chart_president'));
+
+          president.draw(data, options);
+        }
+        function cabmin() {
+
+        	var data = new google.visualization.DataTable();
+        	data.addColumn('string', 'Місяць');
+        	data.addColumn('number', 'Ефективність');
+        	data.addRows([
+        	  ['Липень', 5],
+        	  ['Серпень', 3],
+        	  ['Вересень', 1],
+        	  ['Жовтень', 2],
+        	  ['Листопад', 5],
+        	  ['Грудень', 2]
+        	]);
+
+              var options = {
+              	series: {
+              		0: {
+              			pointsVisible: true,
+              			color: 'red'
+              		}
+              	  },
+              	legend: {
+              		position: 'none'
+              	},
+              	backgroundColor: 'transparent',
+              	height: 300,
+                hAxis: {
+                  title: 'Дата'
+                },
+                vAxis: {
+                  title: 'Ефективність',
+                  ticks: [1,2,3,4,5,6,7,8,9,10]
+                }
+              };
+
+              var cabmin = new google.visualization.LineChart(document.getElementById('chart_cabmin'));
+
+              cabmin.draw(data, options);
+            }
+            function vr() {
+
+            	var data = new google.visualization.DataTable();
+            	data.addColumn('string', 'Місяць');
+            	data.addColumn('number', 'Ефективність');
+            	data.addRows([
+            	  ['Липень', 2],
+            	  ['Серпень', 3],
+            	  ['Вересень', 5],
+            	  ['Жовтень', 7],
+            	  ['Листопад', 4],
+            	  ['Грудень', 8]
+            	]);
+
+                  var options = {
+                  	series: {
+                  		0: {
+                  			pointsVisible: true,
+                  			color: 'green'
+                  		}
+                  	  },
+                  	legend: {
+                  		position: 'none'
+                  	},
+                  	backgroundColor: 'transparent',
+                  	height: 300,
+                    hAxis: {
+                      title: 'Дата'
+                    },
+                    vAxis: {
+                      title: 'Ефективність',
+                      ticks: [1,2,3,4,5,6,7,8,9,10]
+                    }
+                  };
+
+                  var vr = new google.visualization.LineChart(document.getElementById('chart_vr'));
+
+                  vr.draw(data, options);
+                }
+    </script>
+  </body>
+</html>
